@@ -7,3 +7,6 @@ chunk_storage.json
 *.bak
 *.tmp
 .DS_Store
+
+# 备份快照目录（本地备份，不上传Git）
+备份快照_*/
