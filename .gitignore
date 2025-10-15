@@ -1,17 +1,9 @@
-# Python缓存文件
 __pycache__/
 *.py[cod]
 *$py.class
-
-# 分块管理临时文件
 chunk_storage.json
 传承块*.txt
 传承块*_part*.txt
-
-# 系统文件
-.DS_Store
-Thumbs.db
-
-# 备份文件
 *.bak
 *.tmp
+.DS_Store
