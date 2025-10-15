@@ -103,13 +103,63 @@ class IntelligentSelfHealingSystem:
         except Exception as e:
             return {"healthy": False, "message": f"备份检查失败: {e}", "auto_fixable": True}
     
+    
+    def dependency_health(self):
+        """检查Python依赖包健康状态"""
+        try:
+            # 导入依赖检查器
+            from 依赖健康检查系统 import DependencyHealthChecker
+            checker = DependencyHealthChecker()
+            report = checker.check_dependency_health()
+            
+            healthy = len(report["missing_deps"]) == 0 and len(report["version_issues"]) == 0
+            
+            return {
+                "healthy": healthy,
+                "message": f"依赖状态: {len(report['missing_deps'])}缺失, {len(report['version_issues'])}版本问题",
+                "auto_fixable": True,
+                "details": report
+            }
+        except Exception as e:
+            return {"healthy": False, "message": f"依赖检查失败: {e}", "auto_fixable": False}
+    
+    def security_health(self):
+        """检查安全状态"""
+        try:
+            # 导入安全检查器
+            from 安全健康检查系统 import SecurityHealthChecker
+            checker = SecurityHealthChecker()
+            report = checker.check_security_health()
+            
+            healthy = report["security_score"] >= 80  # 80分以上认为健康
+            
+            return {
+                "healthy": healthy,
+                "message": f"安全分数: {report['security_score']}/100",
+                "auto_fixable": False,  # 安全修复需要人工确认
+                "details": report
+            }
+        except Exception as e:
+            return {"healthy": False, "message": f"安全检查失败: {e}", "auto_fixable": False}
+    
+    def auto_fix_dependency_issues(self, issue_details):
+        """自动修复依赖问题"""
+        try:
+            from 依赖健康检查系统 import DependencyHealthChecker
+            checker = DependencyHealthChecker()
+            fix_commands = checker.auto_fix_dependencies()
+            return {"success": True, "message": f"执行了{len(fix_commands)}个修复命令"}
+        except Exception as e:
+            return {"success": False, "message": f"依赖修复失败: {e}"}
+
     def auto_fix_issue(self, issue_type, issue_details):
         """自动修复问题"""
         print(f"🔧 自动修复: {issue_type}")
         
         fixes = {
             "git_status_health": self.fix_git_status,
-            "backup_system_health": self.fix_backup_system
+            "backup_system_health": self.fix_backup_system,
+            "dependency_health": self.auto_fix_dependency_issues
         }
         
         if issue_type in fixes:

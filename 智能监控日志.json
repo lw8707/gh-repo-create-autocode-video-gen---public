@@ -1,0 +1,155 @@
+{
+  "last_check": "2025-10-16T05:42:38.389580",
+  "total_checks": 3,
+  "recent_report": {
+    "timestamp": "2025-10-16T05:34:05.493550",
+    "checks": {
+      "git_status_health": {
+        "healthy": false,
+        "message": "Git状态: 8个未知文件",
+        "auto_fixable": true,
+        "details": [
+          "M \"\\346\\231\\272\\350\\203\\275\\350\\207\\252\\346\\243\\200\\344\\277\\256\\345\\244\\215\\347\\263\\273\\347\\273\\237.py\"",
+          "?? \"\\344\\276\\235\\350\\265\\226\\345\\201\\245\\345\\272\\267\\346\\243\\200\\346\\237\\245\\347\\263\\273\\347\\273\\237.py\"",
+          "?? \"\\345\\215\\207\\347\\272\\247\\346\\231\\272\\350\\203\\275\\350\\207\\252\\346\\243\\200\\347\\263\\273\\347\\273\\237.py\"",
+          "?? \"\\345\\256\\211\\345\\205\\250\\345\\201\\245\\345\\272\\267\\346\\212\\245\\345\\221\\212.json\"",
+          "?? \"\\345\\256\\211\\345\\205\\250\\345\\201\\245\\345\\272\\267\\346\\243\\200\\346\\237\\245\\347\\263\\273\\347\\273\\237.py\"",
+          "?? \"\\346\\231\\272\\350\\203\\275\\347\\233\\221\\346\\216\\247\\346\\227\\245\\345\\277\\227.json\"",
+          "?? \"\\347\\263\\273\\347\\273\\237\\346\\236\\266\\346\\236\\204\\345\\215\\207\\347\\272\\247\\350\\256\\241\\345\\210\\222.md\"",
+          "?? \"\\347\\273\\217\\346\\265\\216\\344\\273\\267\\345\\200\\274\\350\\257\\204\\344\\274\\260\\347\\263\\273\\347\\273\\237.py\""
+        ]
+      },
+      "file_integrity_health": {
+        "healthy": true,
+        "message": "文件完整性: 0个文件缺失",
+        "auto_fixable": false,
+        "details": []
+      },
+      "backup_system_health": {
+        "healthy": true,
+        "message": "备份系统: 3个最近备份",
+        "auto_fixable": true,
+        "details": [
+          "备份快照_20251016_024154",
+          "备份快照_20251016_032457",
+          "备份快照_20251016_035450"
+        ]
+      },
+      "dependency_health": {
+        "healthy": false,
+        "message": "依赖状态: 9缺失, 0版本问题",
+        "auto_fixable": true,
+        "details": {
+          "timestamp": "2025-10-16T05:34:05.636508",
+          "critical_deps": {
+            "requests": {
+              "status": "✅",
+              "installed": "2.25.1",
+              "required": "2.25.1+",
+              "healthy": true
+            },
+            "gitpython": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "3.1.30+",
+              "healthy": false
+            },
+            "pyyaml": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "5.4.1+",
+              "healthy": false
+            },
+            "cryptography": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "3.4.8+",
+              "healthy": false
+            },
+            "pillow": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "8.3.0+",
+              "healthy": false
+            },
+            "numpy": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "1.21.0+",
+              "healthy": false
+            },
+            "pandas": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "1.3.0+",
+              "healthy": false
+            },
+            "fastapi": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "0.68.0+",
+              "healthy": false
+            },
+            "uvicorn": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "0.15.0+",
+              "healthy": false
+            },
+            "pydantic": {
+              "status": "❌",
+              "installed": "未安装",
+              "required": "1.8.0+",
+              "healthy": false
+            }
+          },
+          "missing_deps": [
+            "gitpython",
+            "pyyaml",
+            "cryptography",
+            "pillow",
+            "numpy",
+            "pandas",
+            "fastapi",
+            "uvicorn",
+            "pydantic"
+          ],
+          "version_issues": [],
+          "security_issues": [
+            "aria2p 0.10.4 -> 0.12.1",
+            "chardet 4.0.0 -> 5.2.0",
+            "charset-normalizer 3.4.3 -> 3.4.4",
+            "click 8.0.4 -> 8.3.0",
+            "click-aliases 1.0.1 -> 1.0.5",
+            "idna 2.10 -> 3.11",
+            "pyperclip 1.8.2 -> 1.11.0",
+            "requests 2.25.1 -> 2.32.5",
+            "simplejson 3.17.6 -> 3.20.2",
+            "treelib 1.6.4 -> 1.8.0",
+            "urllib3 1.26.20 -> 2.5.0"
+          ],
+          "recommendations": [
+            "安装缺失依赖: pip install gitpython pyyaml cryptography pillow numpy pandas fastapi uvicorn pydantic",
+            "发现过时包，可能存在安全漏洞，建议升级"
+          ]
+        }
+      },
+      "security_health": {
+        "healthy": true,
+        "message": "安全分数: 100/100",
+        "auto_fixable": false,
+        "details": {
+          "timestamp": "2025-10-16T05:42:38.217875",
+          "sensitive_leaks": [],
+          "risk_files_found": [],
+          "git_history_issues": [],
+          "file_permission_issues": [],
+          "security_score": 100,
+          "recommendations": []
+        }
+      }
+    },
+    "issues_found": 2,
+    "auto_fixed": 1
+  }
+}
