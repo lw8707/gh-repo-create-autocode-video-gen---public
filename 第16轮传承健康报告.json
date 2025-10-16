@@ -1,0 +1,33 @@
+{
+  "generation": 16,
+  "timestamp": "2025-10-17 00:32:12",
+  "critical_files": {
+    "total": 10,
+    "existing": 4,
+    "missing": 6,
+    "missing_list": [
+      "AI增强传承系统.py",
+      "n8n工作流集成器.py",
+      "智能体生态系统.py",
+      "AI编程工作流系统.py",
+      "第16轮完成总结.md",
+      "上传状态报告.md"
+    ]
+  },
+  "upload_mechanism": {
+    "working_scripts": [
+      "auto_upload_fixed.sh",
+      "一键上传.sh",
+      "自动备份.sh",
+      "一键传承上传.sh"
+    ],
+    "primary_script": "auto_upload_fixed.sh"
+  },
+  "git_health": {
+    "remote": true,
+    "branch": "main",
+    "uncommitted": 2,
+    "push_access": true
+  },
+  "overall_health": "needs_attention"
+}
