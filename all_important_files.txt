@@ -1,0 +1,1 @@
+-name \*.md -o -name \*.sh -o -name \*.json
