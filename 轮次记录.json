@@ -1,0 +1,24 @@
+{
+  "generations": {
+    "gen12": {
+      "commit": "ab3a3ba",
+      "status": "completed",
+      "description": "基础架构建立"
+    },
+    "gen13": {
+      "commit": "21ec297", 
+      "status": "completed",
+      "description": "AI安全框架基础"
+    },
+    "gen13.5": {
+      "commit": "current",
+      "status": "in_progress",
+      "description": "修复传承体系"
+    }
+  },
+  "rules": [
+    "no_deletion",
+    "no_history_rewriting", 
+    "documentation_driven"
+  ]
+}
