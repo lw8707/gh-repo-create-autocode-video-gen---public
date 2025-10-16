@@ -1,0 +1,64 @@
+name: AI开发平台流水线
+version: '2.0'
+
+stages:
+  - name: 代码检查
+    steps:
+      - name: 安全扫描
+        type: docker
+        image: security-scanner:latest
+        commands:
+          - python security_scan.py
+        
+      - name: 代码质量
+        type: docker  
+        image: python:3.9
+        commands:
+          - pip install pylint bandit
+          - pylint **/*.py
+          - bandit -r .
+
+  - name: 构建测试
+    steps:
+      - name: 单元测试
+        type: docker
+        image: python:3.9
+        commands:
+          - pip install pytest
+          - pytest tests/ -v
+          
+      - name: 集成测试
+        type: docker
+        image: python:3.9
+        commands:
+          - python -m unittest discover integration_tests/
+
+  - name: 构建打包
+    steps:
+      - name: 打包应用
+        type: docker
+        image: python:3.9
+        commands:
+          - pip install pyinstaller
+          - pyinstaller --onefile main.py
+          
+      - name: 容器化
+        type: docker-build
+        dockerfile: Dockerfile
+        image: my-ai-platform:latest
+
+  - name: 部署
+    steps:
+      - name: 开发环境
+        type: kubernetes
+        cluster: dev
+        namespace: ai-platform
+        yaml: k8s/dev-deployment.yaml
+        
+      - name: 生产环境
+        type: kubernetes
+        cluster: prod
+        namespace: ai-platform
+        yaml: k8s/prod-deployment.yaml
+        when:
+          branch: main
