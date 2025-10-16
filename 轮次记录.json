@@ -6,19 +6,24 @@
       "description": "基础架构建立"
     },
     "gen13": {
-      "commit": "21ec297", 
+      "commit": "21ec297",
       "status": "completed",
       "description": "AI安全框架基础"
     },
     "gen13.5": {
       "commit": "current",
+      "status": "completed",
+      "description": "修复传承体系混乱问题"
+    },
+    "gen14": {
+      "commit": "current",
       "status": "in_progress",
-      "description": "修复传承体系"
+      "description": "第14轮传承：全面查缺补漏与系统优化"
     }
   },
   "rules": [
     "no_deletion",
-    "no_history_rewriting", 
+    "no_history_rewriting",
     "documentation_driven"
   ]
 }

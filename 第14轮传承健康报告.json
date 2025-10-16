@@ -1,0 +1,114 @@
+{
+  "heritage_health": {
+    "check_time": "2025-10-16T17:29:04.756805",
+    "current_generation": "# 项目传承指针\nCURRENT_GENERATION=13.5\nLAST_STABLE_TAG=gen13-in-progress\nNEXT_GENERATION=14\n",
+    "file_integrity": {
+      "传承核心.md": {
+        "exists": true,
+        "status": "✅"
+      },
+      "轮次记录.json": {
+        "exists": true,
+        "status": "✅"
+      },
+      ".generation_pointer": {
+        "exists": true,
+        "status": "✅"
+      },
+      "智能自检修复系统.py": {
+        "exists": true,
+        "status": "✅"
+      },
+      "多重备份系统.py": {
+        "exists": true,
+        "status": "✅"
+      },
+      "分块管理器_v2.py": {
+        "exists": true,
+        "status": "✅"
+      },
+      "验证传承.sh": {
+        "exists": true,
+        "status": "✅"
+      },
+      "简化修复.sh": {
+        "exists": true,
+        "status": "✅"
+      }
+    },
+    "generation_integrity": {
+      "gen12": {
+        "exists": true,
+        "status": "✅"
+      },
+      "gen13": {
+        "exists": true,
+        "status": "✅"
+      },
+      "gen13.5": {
+        "exists": true,
+        "status": "✅"
+      },
+      "gen14": {
+        "exists": true,
+        "status": "✅"
+      }
+    },
+    "git_integrity": {
+      "local_changes": 9,
+      "has_remote": true,
+      "status": "⚠️"
+    },
+    "issues_found": [],
+    "recommendations": []
+  },
+  "tool_health": {
+    "tool_matrix": {
+      "版本管理": {
+        "简化修复.sh": {
+          "exists": true,
+          "status": "✅"
+        },
+        "验证传承.sh": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "备份系统": {
+        "多重备份系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "自检系统": {
+        "智能自检修复系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "分块管理": {
+        "分块管理器_v2.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "安全工具": {
+        "安全健康检查系统.py": {
+          "exists": true,
+          "status": "✅"
+        },
+        "依赖健康检查系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      }
+    },
+    "missing_tools": [],
+    "health_score": 100.0
+  },
+  "overall_health_score": 83.33333333333333,
+  "critical_issues": [],
+  "immediate_actions": [
+    "提交未保存的更改到Git仓库"
+  ]
+}

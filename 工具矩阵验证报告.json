@@ -1,0 +1,101 @@
+{
+  "existence_validation": {
+    "existence_report": {
+      "传承管理": {
+        "传承核心.md": {
+          "exists": true,
+          "status": "✅"
+        },
+        "轮次记录.json": {
+          "exists": true,
+          "status": "✅"
+        },
+        ".generation_pointer": {
+          "exists": true,
+          "status": "✅"
+        },
+        "验证传承.sh": {
+          "exists": true,
+          "status": "✅"
+        },
+        "简化修复.sh": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "版本控制": {
+        "智能Git状态管理器.py": {
+          "exists": true,
+          "status": "✅"
+        },
+        "分块管理器_v2.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "备份系统": {
+        "多重备份系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "自检修复": {
+        "智能自检修复系统.py": {
+          "exists": true,
+          "status": "✅"
+        },
+        "依赖健康检查系统.py": {
+          "exists": true,
+          "status": "✅"
+        },
+        "安全健康检查系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      },
+      "开发工具": {
+        "Termux环境修复器.py": {
+          "exists": false,
+          "status": "❌"
+        },
+        "经济价值评估系统.py": {
+          "exists": true,
+          "status": "✅"
+        }
+      }
+    },
+    "missing_tools": [
+      "Termux环境修复器.py"
+    ],
+    "existence_score": 92.3076923076923
+  },
+  "functionality_validation": {
+    "验证传承.sh": {
+      "chmod +x 验证传承.sh": {
+        "success": true,
+        "returncode": 0
+      },
+      "./验证传承.sh": {
+        "success": true,
+        "returncode": 0
+      }
+    },
+    "简化修复.sh": {
+      "chmod +x 简化修复.sh": {
+        "success": true,
+        "returncode": 0
+      },
+      "./简化修复.sh": {
+        "success": true,
+        "returncode": 0
+      }
+    },
+    "智能自检修复系统.py": {
+      "status": "⏰ 执行超时"
+    }
+  },
+  "overall_tool_health": 92.3076923076923,
+  "recommendations": [
+    "补全缺失工具: Termux环境修复器.py"
+  ]
+}
