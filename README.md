@@ -1,11 +1,11 @@
-# gh-repo-create-autocode-video-gen---public
+#GH-报告-创建-自动编码-视频-生成-公共
 ## 🚀 新对话快速启动
-1. 访问: https://github.com/lw8707/gh-repo-create-autocode-video-gen---public
-2. 运行: cd ~/my-ai-business/我的智能体课程 && ./全面诊断.sh
+1.访问:https://github.com/lw8707/gh-repo-create-autocode-video-gen-公共
+2.运行:cd ~/my-ai-business/我的智能体课程 && ./全面诊断。嘘
 3. 基于现有成果继续开发
 
 ## 📋 项目原则
-- 只增不删，保持连续性
+- 只增不删，保持连续性不删除不移除不覆盖。不消除。在原有的基础上做增强增量学习。不断升级。保证所有历史都要存在。
 - 基于已验证的成功路径
 - 复用现有工具和脚本
 - 避免重复建设
