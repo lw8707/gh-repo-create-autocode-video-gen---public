@@ -1,8 +1,8 @@
 {
   "current_status": {
-    "total_files": 2304,
-    "tools_count": 51,
-    "docs_count": 162
+    "total_files": 2393,
+    "tools_count": 58,
+    "docs_count": 171
   },
   "phase1_research": {
     "goal": "深度理解现有系统",
