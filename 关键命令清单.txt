@@ -1,0 +1,5 @@
+cd ~/my-ai-business/我的智能体课程
+git add .
+git commit -m "紧急备份"
+git push
+./一键上传.sh

@@ -1,12 +1,5 @@
 #!/bin/bash
-echo "💾 开始自动备份..."
-备份时间=$(date +%Y%m%d_%H%M%S)
-备份文件="课程备份_${备份时间}.tar.gz"
-echo "备份时间: $备份时间"
-echo "备份文件: $备份文件"
-tar -czf "$备份文件" ./*.sh ./*.md 2>/dev/null
-if [ $? -eq 0 ]; then
-    echo "✅ 备份完成: $备份文件"
-else
-    echo "❌ 备份失败"
-fi
+echo "📦 自动备份中..."
+cp -r ~/my-ai-business /sdcard/termux-backup/
+date > /sdcard/termux-backup/last_backup.txt
+echo "✅ 备份完成"
